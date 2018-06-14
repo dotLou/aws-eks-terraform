@@ -14,6 +14,6 @@ variable "region" {
 }
 
 variable "cluster-name" {
-  default = "${var.environment}-k8s-eks-${var.region}"
-  type    = "string"
+  type        = "string"
+  description = "The name of the EKS cluster resources"
 }
